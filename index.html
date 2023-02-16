@@ -9,9 +9,122 @@
     <title>Formulário</title>
 </head>
 <style>
-    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(238, 238, 238);
+    }
+    .painel{
+        margin-left: 37%;
+        margin-top: 100px;
+        position: relative;
+        width: 350px;
+        height: 280px;
+        background-color: rgb(246, 246, 246);
+        border: 2px solid rgb(191, 211, 213);
+        border-bottom: none;
+        border-radius: 45px 20px 0px 0px;
+    }
+    .rodape{
+        position: relative;
+        text-align: center;
+        margin-left: 37%;
+        height: 50px;
+        width: 350px;
+        border-radius: 0px 0px 45px 20px;
+        border: 2px solid rgb(191, 211, 213);
+        background-color: rgb(225, 234, 235);
+
+    }
+    h1{
+        font-size: 35px;
+        text-align: center;
+        color: rgb(0, 101, 111);
+    }
+    .textoFormulario{
+        font-size: 13px;
+        margin-left: 15px;
+        color: rgb(53, 68, 71);
+    }
+    .campoFormulario{
+        margin-left: 15px;
+        margin-top: 2px;
+        width: 318px;
+        height: 25px;
+        border-radius: 4px;
+        border: 1px solid rgb(202, 202, 202);
+    }
+    input[id=login]{
+        margin-left: 15px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+        border: 1px solid rgb(61, 157,179);
+        border-radius: 3px;
+        color: white;
+        background-color: rgb(61, 157,179);
+        width: 323px;
+        height: 27px;
+        font-size: 15px;
+        }
+    input[type=checkbox]{
+        margin-left: 15px;
+        margin-right: -2px;
+        height: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    label[for=manterConn]{
+        margin-left: -1px;
+        font-size: 12px;
+        color: rgb(53, 68, 71);
+    }
+    label[for=cadastro]{
+        text-align: center;
+        font-size: 13px;
+        margin-left: 25%;
+        margin-right: 20px;
+    }
+    input[id=cadastro]{
+        color: rgb(61, 157,179);
+        font-weight: bold;
+        background-color: white;
+        border-radius: 3px;
+        border:1px solid rgb(212, 221, 91) ;
+        margin-top: 15px;
+        margin-right: 12px;
+    }
+    label[for=cadastro]{
+        color: rgb(155, 156, 157);
+        font-weight: bold;
+        margin-top: 15px;
+        margin-right: 1px;
+    }
+    .linha{
+        border: 0;
+        margin-top: -5px;
+        margin-bottom: 15px;
+        height: 1px;
+        background:radial-gradient(circle, rgb(0, 101, 111), rgb(0, 101, 111), white);
+    }
 </style>
 <body>
-
+<div class="painel">
+    <h1>Login</h1>
+    <hr class="linha">
+    <form action="POST">
+        <label class="textoFormulario" for="email">Seu e-mail:</label><br>
+        <input class="campoFormulario" type="text" id="email" placeholder="contato@umdominio.com"> <br><br>
+        <label class="textoFormulario" for="senha">Sua senha:</label><br>
+        <input class="campoFormulario" type="password" id="senha" placeholder="1234"><br>
+        <input type="checkbox" id="manterConn" name="manterConn">
+        <label for="manterConn">Manter-me logado</label><br>
+        <input type="submit" value="Logar" id="login"><br><br>
+    </form>
+</div>
+<div class="rodape">
+    <form action="cadastro.html">
+        <label for="cadastro">Ainda não tem conta?</label>
+        <input type="submit" id="cadastro" value="Cadastre-se"><br>
+    </form>
+</div>
 </body>
 </html>

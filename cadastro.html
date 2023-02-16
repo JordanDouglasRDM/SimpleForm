@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(238, 238, 238);
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(0, 101, 111);
+    }
+    .painel{
+        border: 1px solid black;
+        margin-left: 30%;
+        width: 500px;
+        position: relative;
+        background-color: rgb(246, 246, 246);
+        border: 2px solid rgb(191, 211, 213);
+        border-bottom: none;
+        border-radius: 45px 20px 0px 0px;
+    }
+    form{
+        margin-left: 40px;
+
+    }
+    input{
+        width: 250px;
+        margin-bottom: 5px;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+    input:focus{
+        transition: 0.5s;
+        width: 350px;
+    }
+    input[type=submit]{
+        width: 408px;
+        margin-top: 10px;
+    }
+    select{
+        margin-right: 25px;
+        height: 25px;
+    }
+    .linha{
+        border: 0;
+        margin-top: -5px;
+        margin-bottom: 15px;
+        height: 1px;
+        background:radial-gradient(circle, rgb(0, 101, 111), rgb(0, 101, 111), white);
+    }
+</style>
+<body>
+    <div class="painel">
+        <h1>Cadastro</h1>
+        <hr class="linha">
+        <form action="" method="get">
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" id="nome"><br>
+            <!-- <label for="cpf">CPF:</label><br> ###adiado por causa do regex
+            <input type="number" id="cpf"><br> -->
+            <label for="email">Seu melhor e-mail:</label><br>
+            <input type="email" id="email"><br>
+            <label for="celular">Seu telefone:</label><br>
+            <input type="number" name="" id="celular"><br><br>
+            <label class="textoCivil" for="civil">Estado Civil:</label>
+            <select id="civil">
+                <option value="Selecionar">Selecionar</option>
+                <option value="Solteiro">Solteiro</option>
+                <option value="Casado">Casado</option>
+                <option value="Divorciado">Divorciado</option>
+                <option value="Viuvo">Viuvo</option>
+            </select>
+            <label class="textoGen" for="gen">Gênero Sexual</label>
+            <select id="gen">
+                <option value="Selecionar">Selecionar</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+            </select><br><br>
+            <label for="cep">CEP</label><br>
+            <input type="number" id="cep"><br>
+            <label for="cidade">Cidade</label><br>
+            <input type="text" id="cidade"><br>
+            <label for="estado">Estado</label><br>
+            <input type="text" id="estado"><br>
+            <label for="bairro">Bairro</label><br>
+            <input type="text" id="bairro"><br>
+            <label for="endereco">Endereço</label><br>
+            <input type="text" id="endereco"><br>
+            <label for="numero">Numero</label><br>
+            <input type="text" id="numero"><br>
+            <label for="complemento">Complemento</label><br>
+            <input type="text" id="complemento"><br>
+            <label for="senha">Sua senha:</label><br>
+            <input type="password" id="senha"><br>
+            <label for="senha">Confirme sua senha:</label><br>
+            <input type="password" id="senha"><br>
+            <input type="submit" value="Cadastrar" id="cadastrar"><br><br>
+        </form>
+    </div>
+</body>
+</html>
